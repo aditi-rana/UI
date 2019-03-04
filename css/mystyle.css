@@ -8,7 +8,6 @@
 
 .root {
     display: flex;
-    height: 100vh;
     background-color: #f8f8fa;
 }
   
@@ -266,6 +265,7 @@
     border-width: 17px 15px 20px 30px;
     background-color: white;
     padding: 20px;
+    /* overflow: scroll; */
 }
 
 .people {
@@ -318,23 +318,29 @@ thead th {
     padding: 20px;
 }
 
-.delivered {
-    font-size: 11px;
+.status-d {
+    font-size: 11px !important;
     color: white;
     background-color: #25a79b;
     border-radius: 5px;
     padding: 1px;
 }
 
-.pending {
-    font-size: 11px;
+.status-p {
+    font-size: 11px !important;
     color: white;
     border-radius: 5px;
     padding: 1px;
     background-color: #f7b11d;
-    margin-left: 3px;
 }
-
+  
+.status-c {
+    font-size: 11px !important;
+    color: white;
+    border-radius: 5px;
+    padding: 1px;
+    background-color: #ef4761;
+}
 
 
 
