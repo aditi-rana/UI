@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/mystyle.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+
+<div class="root">
+    <!-- sidebar-->
+    <div id = "sidebar">
+        
+        <div id = "logo">
+            <center><img src="image/crop.jpg" alt = "not found" style="margin-top: 35px; height: 28px; width: 130px;"></center> 
+        </div>
+
+        <div id = "title">
+            MAIN
+        </div>
+
+        <div id = "list">
+            <a class="active" href="#">
+                <div id = "icon">
+                    <i class="fas fa-home"></i>
+                    <span style = "padding-left: 10px;">Dashboard</span>
+                    <div id = "number" class = "color-aqua"><center>2</center></div>
+                </div>
+            </a>
+            <a href="#">
+                <div id = "icon" style = "padding-left: 3px;"> 
+                    <i class="far fa-calendar-alt"></i>
+                    <span style = "padding-left: 14px;">Calendar</span>
+                </div>
+            </a>
+            <a href="#">
+                <div id = "icon" style = "padding-left: 3px;"> 
+                    <i class="fas fa-envelope"></i>
+                    <span style = "padding-left: 14px;">Email</span>
+                    <i class="fas fa-angle-right arrow"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div id = "icon" style = "padding-left: 3px;"> 
+                    <i class="fas fa-cube"></i>
+                    <span style = "padding-left: 14px;">UI Elements</span>
+                    <i class="fas fa-angle-right arrow"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div id = "icon" style = "padding-left: 3px;"> 
+                    <i class="far fa-file"></i>
+                    <span style = "padding-left: 14px;">Forms</span>
+                    <div id = "number" class = "color-green"><center>9</center></div>
+                </div>
+            </a>
+            <a href="#">
+                <div id = "icon" style = "padding-left: 3px;"> 
+                    <i class="fas fa-chart-pie"></i>
+                    <span style = "padding-left: 14px;">Charts</span>
+                    <i class="fas fa-angle-right arrow"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div id = "icon" style = "padding-left: 3px;"> 
+                    <i class="fas fa-table"></i>
+                    <span style = "padding-left: 14px;">Tables</span>
+                    <i class="fas fa-angle-right arrow"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div id = "icon" style = "padding-left: 3px;"> 
+                    <i class="fas fa-smile-beam"></i>
+                    <span style = "padding-left: 14px;">Icons</span>
+                    <i class="fas fa-angle-right arrow"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div id = "icon" style = "padding-left: 3px;"> 
+                    <i class="fas fa-map-marker"></i>
+                    <span style = "padding-left: 14px;">Map</span>
+                    <div id = "number" class = "color-red"><center>2</center></div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    
+    
+    
+    
+    <div class = "main">
+
+        <!-- topbar -->
+        <div class = "topbar">
+            <div class="first">
+                <i class="menu fas fa-bars"></i>
+                <button class="create">Create<i class="fas fa-caret-down"></i></button>
+            </div>
+            <div class="second">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="lang-drop-down">
+                    <i class="fas fa-flag"></i><span>English</span><i class="fas fa-caret-down"></i>
+                </div>
+                <div class="screenshot-icon">
+                    <i class="fas fa-crop-alt screenshot-icon"></i>
+                </div>
+                <div class="notification">
+                    <i class="far fa-bell"></i>
+                </div>
+                <div class="profile">
+                    <img src="./image/profile.png">
+                </div>
+            </div>
+
+        </div>
+
+        <div id = "content">
+
+            <!-- Title -->
+            <div class="title">
+                <h4>Dashboard</h4>
+                <p>Welcome to Veltrix Dashboard</p>
+            </div>
+            
+            <!-- Settings button -->
+            <div class="settings">
+                <button class="fas fa-cog" type="button"><span>Settings</span></button>
+            </div>
+            
+            <!-- Stat cards -->
+            <div class="cards">
+                <span class="card"></span>
+                <span class="card"></span>
+                <span class="card"></span>
+                <span class="card"></span>
+            </div>
+
+            <div class="transaction">
+                <h4>Latest Transaction</h4>
+                <table class="people">
+                    <thead>
+                        <tr>
+                            <th>(#) Id</th>
+                            <th colspan="2">Name</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>#14256</th>
+                            <td id="image"><img src="image/profile.png" alt="image"></td>
+                            <td>Philip Smead</td>
+                            <td>15/1/2018</td>
+                            <td>$94</td>
+                            <td><span class="status-d">Delivered</span></td>
+                            <td><button class="btn-edit">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <th>#14257</th>
+                            <td id="image"><img src="image/profile.png" alt="image"></td>
+                            <td>Brent Shipley</td>
+                            <td>16/1/2019</td>
+                            <td>$112</td>
+                            <td><span class="status-p">Pending</span></td>
+                            <td><button class="btn-edit">Edit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="chat-box">
+                <h4>Chat</h4>
+            </div>
+      
+        </div>
+    </div>
+    
+</div>
+
+</body>
+</html> 
+
+
+
