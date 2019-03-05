@@ -8,17 +8,18 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.google.com/?query=roboto&selection.family=Roboto:400,500,500i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
     <link rel="stylesheet" href="css/mystyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script>
+    <script type="text/javascript">
         $(document).ready(function () {
-            $(".menu").click(function () {
-                $("main").toggleClass("toggle");
-            });
+            $('.fa-bars').click(function () {
+                $('.container').toggleClass('toggle');
+            }
+            );
         });
     </script>
 
@@ -210,8 +211,8 @@
                         <tbody>
                             <tr>
                                 <th>#14256</th>
-                                <td id="image"><img src="image/brad-pitt.jpeg" alt="image"></td>
-                                <td>Brad Pitt</td>
+                                <td id="image"><img src="image/philip.jpeg" alt="image"></td>
+                                <td>Philip Smead</td>
                                 <td>15/1/2018</td>
                                 <td>$94</td>
                                 <td><span class="status-d">Delivered</span></td>
@@ -219,8 +220,8 @@
                             </tr>
                             <tr>
                                 <th>#14257</th>
-                                <td id="image"><img src="image/alexandra.jpeg" alt="image"></td>
-                                <td>Alexandra</td>
+                                <td id="image"><img src="image/brent.jpeg" alt="image"></td>
+                                <td>Brent Shipley</td>
                                 <td>16/1/2019</td>
                                 <td>$112</td>
                                 <td><span class="status-p">Pending</span></td>
@@ -228,8 +229,8 @@
                             </tr>
                             <tr class="active">
                                 <th>#14258</th>
-                                <td id="image"><img src="image/the-rock.jpeg" alt="image"></td>
-                                <td>The Rock</td>
+                                <td id="image"><img src="image/Robert.jpg" alt="image"></td>
+                                <td>Robert Sitton</td>
                                 <td>17/1/2019</td>
                                 <td>$200</td>
                                 <td><span class="status-d">Delivered</span></td>
@@ -237,8 +238,8 @@
                             </tr>
                             <tr>
                                 <th>#14259</th>
-                                <td id="image"><img src="image/emma-stone.jpeg" alt="image"></td>
-                                <td>Emma Stone</td>
+                                <td id="image"><img src="image/alberto.jpeg" alt="image"></td>
+                                <td>Alberto Jackson</td>
                                 <td>18/1/2019</td>
                                 <td>$300</td>
                                 <td><span class="status-c">Cancel</span></td>
@@ -246,8 +247,8 @@
                             </tr>
                             <tr>
                                 <th>#14260</th>
-                                <td id="image"><img src="image/wiz-khalifa.jpeg" alt="image"></td>
-                                <td>Wiz Khalifa</td>
+                                <td id="image"><img src="image/david.jpg" alt="image"></td>
+                                <td>David Sanchez</td>
                                 <td>19/1/2019</td>
                                 <td>$412</td>
                                 <td><span class="status-d">Delivered</span></td>
@@ -264,32 +265,72 @@
                         <div class="messages">
                             <div class="received">
                                 <div class="img">
-                                    <img src="image/alexandra.jpeg" alt="Alexandra">
+                                    <img src="image/girl.png" alt="Alexandra">
                                     <p class="time">10:00</p>
                                 </div>
                                 <div class="msg">
-                                    <p class="name">Alexandra</p>
-                                    <p class="message">Hello, GeekyAnts</p>
+                                    <p class="name">Alexa</p>
+                                    <p class="message">Hello!</p>
                                 </div>
                             </div>
                             <div class="sent">
                                 <div class="img">
-                                    <img src="image/alexandra.jpeg" alt="Alexandra">
-                                    <p class="time">10:00</p>
+                                    <img src="image/boy.png" alt="Alexandra">
+                                    <p class="time">10:01</p>
                                 </div>
                                 <div class="msg">
                                     <p class="name">Alexandra</p>
-                                    <p class="message">Hello, GeekyAnts. How is everybody?</p>
+                                    <p class="message">Hi, How is you? What about our next meeting?</p>
                                 </div>
                             </div>
                             <div class="received">
                                 <div class="img">
-                                    <img src="image/alexandra.jpeg" alt="Alexandra">
-                                    <p class="time">10:00</p>
+                                    <img src="image/girl.png" alt="Alexandra">
+                                    <p class="time">10:04</p>
+                                </div>
+                                <div class="msg">
+                                    <p class="name">Alexa</p>
+                                    <p class="message">Yeah everything is fine.</p>
+                                </div>
+                            </div>
+                            <div class="sent">
+                                <div class="img">
+                                    <img src="image/boy.png" alt="Alexandra">
+                                    <p class="time">10:05</p>
                                 </div>
                                 <div class="msg">
                                     <p class="name">Alexandra</p>
-                                    <p class="message">Hello, GeekyAnts</p>
+                                    <p class="message">Wow, that's great!</p>
+                                </div>
+                            </div>
+                            <div class="sent">
+                                <div class="img">
+                                    <img src="image/boy.png" alt="Alexandra">
+                                    <p class="time">10:06</p>
+                                </div>
+                                <div class="msg">
+                                    <p class="name">Alexandra</p>
+                                    <p class="message">What about our next meeting?</p>
+                                </div>
+                            </div>
+                            <div class="sent">
+                                <div class="img">
+                                    <img src="image/boy.png" alt="Alexandra">
+                                    <p class="time">10:09</p>
+                                </div>
+                                <div class="msg">
+                                    <p class="name">Alexandra</p>
+                                    <p class="message">What about our next meeting?</p>
+                                </div>
+                            </div>
+                            <div class="sent">
+                                <div class="img">
+                                    <img src="image/boy.png" alt="Alexandra">
+                                    <p class="time">10:15</p>
+                                </div>
+                                <div class="msg">
+                                    <p class="name">Alexandra</p>
+                                    <p class="message">What about our next meeting?</p>
                                 </div>
                             </div>
                         </div>
@@ -302,253 +343,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <body>
-
-<div class="root">
-    <div id = "sidebar">
-        
-        <div id = "logo">
-            <center><img src="image/crop.jpg" alt = "not found" style="margin-top: 35px; height: 28px; width: 130px;"></center> 
-        </div>
-
-        <div id = "title">
-            MAIN
-        </div>
-
-        <div id = "list">
-            <a class="active" href="#">
-                <div id = "icon">
-                    <i class="fas fa-home"></i>
-                    <span style = "padding-left: 10px;">Dashboard</span>
-                    <div id = "number" class = "color-aqua"><center>2</center></div>
-                </div>
-            </a>
-            <a href="#">
-                <div id = "icon" style = "padding-left: 3px;"> 
-                    <i class="far fa-calendar-alt"></i>
-                    <span style = "padding-left: 14px;">Calendar</span>
-                </div>
-            </a>
-            <a href="#">
-                <div id = "icon" style = "padding-left: 3px;"> 
-                    <i class="fas fa-envelope"></i>
-                    <span style = "padding-left: 14px;">Email</span>
-                    <i class="fas fa-angle-right arrow"></i>
-                </div>
-            </a>
-            <a href="#">
-                <div id = "icon" style = "padding-left: 3px;"> 
-                    <i class="fas fa-cube"></i>
-                    <span style = "padding-left: 14px;">UI Elements</span>
-                    <i class="fas fa-angle-right arrow"></i>
-                </div>
-            </a>
-            <a href="#">
-                <div id = "icon" style = "padding-left: 3px;"> 
-                    <i class="far fa-file"></i>
-                    <span style = "padding-left: 14px;">Forms</span>
-                    <div id = "number" class = "color-green"><center>9</center></div>
-                </div>
-            </a>
-            <a href="#">
-                <div id = "icon" style = "padding-left: 3px;"> 
-                    <i class="fas fa-chart-pie"></i>
-                    <span style = "padding-left: 14px;">Charts</span>
-                    <i class="fas fa-angle-right arrow"></i>
-                </div>
-            </a>
-            <a href="#">
-                <div id = "icon" style = "padding-left: 3px;"> 
-                    <i class="fas fa-table"></i>
-                    <span style = "padding-left: 14px;">Tables</span>
-                    <i class="fas fa-angle-right arrow"></i>
-                </div>
-            </a>
-            <a href="#">
-                <div id = "icon" style = "padding-left: 3px;"> 
-                    <i class="fas fa-smile-beam"></i>
-                    <span style = "padding-left: 14px;">Icons</span>
-                    <i class="fas fa-angle-right arrow"></i>
-                </div>
-            </a>
-            <a href="#">
-                <div id = "icon" style = "padding-left: 3px;"> 
-                    <i class="fas fa-map-marker"></i>
-                    <span style = "padding-left: 14px;">Map</span>
-                    <div id = "number" class = "color-red"><center>2</center></div>
-                </div>
-            </a>
-        </div>
-
-    </div>
-    
-    
-    
-    
-    <div class = "main">
-
-        <div class = "topbar">
-            <div class="first">
-                <i class="menu fas fa-bars"></i>
-                <button class="create">Create<i class="fas fa-caret-down"></i></button>
-            </div>
-            <div class="second">
-                <div class="search">
-                    <input type="text" placeholder="Search..">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="lang-drop-down">
-                    <i class="fas fa-flag"></i><span>English</span><i class="fas fa-caret-down"></i>
-                </div>
-                <div class="screenshot-icon">
-                    <i class="fas fa-crop-alt screenshot-icon"></i>
-                </div>
-                <div class="notification">
-                    <i class="far fa-bell"></i>
-                </div>
-                <div class="profile">
-                    <img src="./image/profile.png">
-                </div>
-            </div>
-
-        </div>
-
-        <div id = "content">
-
-            <div class="title">
-                <h4>Dashboard</h4>
-                <p>Welcome to Veltrix Dashboard</p>
-            </div>
-            
-            <div class="settings">
-                <button class="fas fa-cog" type="button"><span>Settings</span></button>
-            </div>
-            
-            <div class="cards"> 
-                <span class="card">
-
-                    <div id = "div_logo">
-
-                        
-                        <div id = "ll">
-
-                        </div>
-                        <div id = "write">
-                            <font size = "3">ORDERS</font><br/><font size = "+2">1,625</font>
-                        </div>
-                        <div id = "symbol">
-            
-                        </div>
-                        <div id = "fourth"> 
-            
-                        </div>
-                    </div>
-
-                </span>
-                <span class="card"></span>
-                <span class="card"></span>
-                <span class="card"></span>
-            </div>
-
-            <div class="transaction">
-                <h4>Latest Transaction</h4>
-                <table class="people">
-                    <thead>
-                        <tr>
-                            <th>(#) Id</th>
-                            <th colspan="2">Name</th>
-                            <th>Date</th>
-                            <th>Amount</th>
-                            <th>Status</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>#14256</th>
-                            <td id="image"><img src="image/profile.png" alt="image"></td>
-                            <td>Philip Smead</td>
-                            <td>15/1/2018</td>
-                            <td>$94</td>
-                            <td><span class="status-d">Delivered</span></td>
-                            <td><button class="btn-edit">Edit</button></td>
-                        </tr>
-                        <tr>
-                            <th>#14257</th>
-                            <td id="image"><img src="image/profile.png" alt="image"></td>
-                            <td>Brent Shipley</td>
-                            <td>16/1/2019</td>
-                            <td>$112</td>
-                            <td><span class="status-p">Pending</span></td>
-                            <td><button class="btn-edit">Edit</button></td>
-                        </tr>
-                        <tr class="active">
-                            <th>#14258</th>
-                            <td id="image"><img src="image/profile.png" alt="image"></td>
-                            <td>Robert Sitton</td>
-                            <td>17/1/2019</td>
-                            <td>$200</td>
-                            <td><span class="status-d">Delivered</span></td>
-                            <td><button class="btn-edit">Edit</button></td>
-                        </tr>
-                        <tr>
-                            <th>#14259</th>
-                            <td id="image"><img src="image/profile.png" alt="image"></td>
-                            <td>Alberto Jackson</td>
-                            <td>18/1/2019</td>
-                            <td>$300</td>
-                            <td><span class="status-c">Cancel</span></td>
-                            <td><button class="btn-edit">Edit</button></td>
-                        </tr>
-                        <tr>
-                            <th>#14260</th>
-                            <td id="image"><img src="image/profile.png" alt="image"></td>
-                            <td>David Sanchez</td>
-                            <td>19/1/2019</td>
-                            <td>$412</td>
-                            <td><span class="status-d">Delivered</span></td>
-                            <td><button class="btn-edit">Edit</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="chat-box">
-                <h4>Chat</h4>
-            </div>
-      
-        </div>
-    </div>
-    
-</div>
-
-</body>
-</html> 
-
-
- -->
