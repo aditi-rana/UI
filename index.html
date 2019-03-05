@@ -1,12 +1,333 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" href="css/mystyle.css" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>
+        Dashboard
+    </title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.google.com/?query=roboto&selection.family=Roboto:400,500,500i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        $(document).ready(function () {
+            $(".menu").click(function () {
+                $("main").toggleClass("toggle");
+            });
+        });
+    </script>
+
 </head>
-<body>
+
+<body class="container">
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <font size="+2">GeekyAnts</font>
+        </div>
+        <div class="main-text">
+            MAIN
+        </div>
+        <div class="list">
+            <ul class="menu">
+                <a href="#">
+                    <li class="active">
+                        <i class="fas fa-home"></i>
+                        <span class="text">Dashboard</span>
+                        <span class="badge badge-sb color-6573d4">2</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <i class="fas fa-calendar-week"></i>
+                        <span class="text">Calender</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span class="text">Email</span>
+                        <i class="fas fa-angle-right arrow"></i>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <i class="fas fa-cube"></i>
+                        <span class="text">UI Elements</span>
+                        <i class="fas fa-angle-right arrow"></i>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <i class="fab fa-wpforms"></i>
+                        <span class="text">Forms</span>
+                        <span class="badge badge-sb color-6573d4">9</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <i class="fas fa-chart-pie"></i>
+                        <span class="text">Charts</span>
+                        <i class="fas fa-angle-right arrow"></i>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <i class="fas fa-table"></i>
+                        <span class="text">Tables</span>
+                        <i class="fas fa-angle-right arrow"></i>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <i class="fas fa-smile-beam"></i>
+                        <span class="text">Icons</span>
+                        <i class="fas fa-angle-right arrow"></i>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="text">Maps</span>
+                        <span class="badge badge-sb color-fa4564">2</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <!-- content side -->
+    <div class="content">
+        <div class="topbar">
+            <div class="left">
+                <button class="menu fas fa-bars"></button>
+
+                <button class="create">Create<i class="fas fa-caret-down"></i></button>
+            </div>
+            <div class="right">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div class="lang-drop-down">
+                    <img src="./image/download.svg" alt="usa"><span>English</span><i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="screenshot-icon">
+                    <i class="fas fa-expand screenshot-icon"></i>
+                </div>
+
+                <div class="notification">
+                    <i class="far fa-bell"></i>
+                    <span class="badge badge-tb color-fa4564">3</span>
+                </div>
+                <div class="profile">
+                    <img src="./image/profile.png" alt="admin">
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="title-dash">
+                <div class="title">
+                    <h4>Dashboard</h4>
+                    <p>Welcome to Veltrix Dashboard</p>
+                </div>
+
+                <div class="s-button">
+                    <button class="fas fa-cog" type="button"><span>Settings</span></button>
+                </div>
+            </div>
+            <div class="status-group">
+                <div class="card">
+                    <div class="logo">
+                        <i class="fas fa-atlas"></i>
+                    </div>
+                    <div class="name">ORDERS</div>
+                    <div class="percent ribbon-green">
+                        <div class="ribbon"></div>
+                        <span>+12%</span>
+                    </div>
+                    <div class="value">1,685<i class="fas fa-arrow-up"></i></div>
+                    <div class="time-s">Since last month</div>
+                    <div class="nxt"><i class="fas fa-arrow-right"></i></div>
+                </div>
+                <div class="card">
+                    <div class="logo"><i class="fas fa-sticky-note"></i></div>
+                    <div class="name">REVENUE</div>
+                    <div class="percent ribbon-red">
+                        <div class="ribbon"></div>
+                        <span>-28%</span>
+                    </div>
+                    <div class="value">52,268<i class="fas fa-arrow-down"></i></div>
+                    <div class="time-s">Since last month</div>
+                    <div class="nxt"><i class="fas fa-arrow-right"></i></div>
+
+                </div>
+                <div class="card">
+                    <div class="logo"><i class="fas fa-pencil-alt"></i></div>
+                    <div class="name">AVERAGE PRICE</div>
+                    <div class="percent ribbon-blue">
+                        <div class="ribbon"></div>
+                        <span>+00%</span>
+                    </div>
+                    <div class="value">15.8<i class="fas fa-arrow-up"></i></div>
+                    <div class="time-s">Since last month</div>
+                    <div class="nxt"><i class="fas fa-arrow-right"></i></div>
+
+                </div>
+                <div class="card">
+                    <div class="logo"><i class="fas fa-briefcase"></i></div>
+                    <div class="name">PRODUCT SOFT</div>
+                    <div class="percent ribbon-yellow">
+                        <div class="ribbon"></div>
+                        <span>+84%</span>
+                    </div>
+                    <div class="value">2436<i class="fas fa-arrow-up"></i></div>
+                    <div class="time-s">Since last month</div>
+                    <div class="nxt"><i class="fas fa-arrow-right"></i></div>
+
+                </div>
+            </div>
+            <div class="trans-chat">
+                <div class="transaction">
+                    <h4>Latest Transaction</h4>
+                    <table class="people">
+                        <thead>
+                            <tr>
+                                <th>(#) Id</th>
+                                <th colspan="2">Name</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>#14256</th>
+                                <td id="image"><img src="image/brad-pitt.jpeg" alt="image"></td>
+                                <td>Brad Pitt</td>
+                                <td>15/1/2018</td>
+                                <td>$94</td>
+                                <td><span class="status-d">Delivered</span></td>
+                                <td><button class="btn-edit">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <th>#14257</th>
+                                <td id="image"><img src="image/alexandra.jpeg" alt="image"></td>
+                                <td>Alexandra</td>
+                                <td>16/1/2019</td>
+                                <td>$112</td>
+                                <td><span class="status-p">Pending</span></td>
+                                <td><button class="btn-edit">Edit</button></td>
+                            </tr>
+                            <tr class="active">
+                                <th>#14258</th>
+                                <td id="image"><img src="image/the-rock.jpeg" alt="image"></td>
+                                <td>The Rock</td>
+                                <td>17/1/2019</td>
+                                <td>$200</td>
+                                <td><span class="status-d">Delivered</span></td>
+                                <td><button class="btn-edit">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <th>#14259</th>
+                                <td id="image"><img src="image/emma-stone.jpeg" alt="image"></td>
+                                <td>Emma Stone</td>
+                                <td>18/1/2019</td>
+                                <td>$300</td>
+                                <td><span class="status-c">Cancel</span></td>
+                                <td><button class="btn-edit">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <th>#14260</th>
+                                <td id="image"><img src="image/wiz-khalifa.jpeg" alt="image"></td>
+                                <td>Wiz Khalifa</td>
+                                <td>19/1/2019</td>
+                                <td>$412</td>
+                                <td><span class="status-d">Delivered</span></td>
+                                <td><button class="btn-edit">Edit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="chat">
+                    <div class="chat-box">
+                        <h4>Chat</h4>
+                        <input type="text" placeholder="Enter your text">
+                        <button id="send">Send</button>
+                        <div class="messages">
+                            <div class="received">
+                                <div class="img">
+                                    <img src="image/alexandra.jpeg" alt="Alexandra">
+                                    <p class="time">10:00</p>
+                                </div>
+                                <div class="msg">
+                                    <p class="name">Alexandra</p>
+                                    <p class="message">Hello, GeekyAnts</p>
+                                </div>
+                            </div>
+                            <div class="sent">
+                                <div class="img">
+                                    <img src="image/alexandra.jpeg" alt="Alexandra">
+                                    <p class="time">10:00</p>
+                                </div>
+                                <div class="msg">
+                                    <p class="name">Alexandra</p>
+                                    <p class="message">Hello, GeekyAnts. How is everybody?</p>
+                                </div>
+                            </div>
+                            <div class="received">
+                                <div class="img">
+                                    <img src="image/alexandra.jpeg" alt="Alexandra">
+                                    <p class="time">10:00</p>
+                                </div>
+                                <div class="msg">
+                                    <p class="name">Alexandra</p>
+                                    <p class="message">Hello, GeekyAnts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <body>
 
 <div class="root">
     <div id = "sidebar">
@@ -128,8 +449,27 @@
                 <button class="fas fa-cog" type="button"><span>Settings</span></button>
             </div>
             
-            <div class="cards">
-                <span class="card"></span>
+            <div class="cards"> 
+                <span class="card">
+
+                    <div id = "div_logo">
+
+                        
+                        <div id = "ll">
+
+                        </div>
+                        <div id = "write">
+                            <font size = "3">ORDERS</font><br/><font size = "+2">1,625</font>
+                        </div>
+                        <div id = "symbol">
+            
+                        </div>
+                        <div id = "fourth"> 
+            
+                        </div>
+                    </div>
+
+                </span>
                 <span class="card"></span>
                 <span class="card"></span>
                 <span class="card"></span>
@@ -211,4 +551,4 @@
 </html> 
 
 
-
+ -->
